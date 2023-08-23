@@ -526,17 +526,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":                        
         buttons = [[
-                    InlineKeyboardButton("🎬 MAIN CHANNEL 🎬", url="https://t.me/+6pdw2jn048w1Zjg1")
+                    InlineKeyboardButton("🎬 MAIN CHANNEL 🎬", url="https://t.me/+gqpU_4qsYAFmY2U1")
                 ],
                 [
-                    InlineKeyboardButton("📽️ UHD MOVIES/SERIES 📽️", url="https://t.me/REMOVIESDUB")
+                    InlineKeyboardButton("📽️ MOVIE REQUEST GROUP 📽️", url="https://t.me/+EGBu5vb1vo9jMDE1")
+                ],
+                [
+                    InlineKeyboardButton("🎬 UHD MOVIES/SERIES 🎬", url="https://t.me/+abo3FyAP1hE5MTI9")
                 ],
                 [
                     InlineKeyboardButton("😎 MORE FROM US 📢", callback_data = "morefromus")
                 ],
                 [
-                    InlineKeyboardButton("🔉 DISCUSSION 🔉", url="https://t.me/+rucqp8Ao-soyMDU1"),
-                    InlineKeyboardButton("❔ HELP ❓", url="http://t.me/reoffadminbot")                
+                    InlineKeyboardButton("📽️ BACKUP CHANNEL 📽️", url="https://t.me/+b8RpV89fK11kMTY9")
+                ],
+                [
+                    InlineKeyboardButton("🔉 DISCUSSION 🔉", url="https://t.me/+YcSmRvCe9xs0YjU1"),
+                    InlineKeyboardButton("❔ HELP ❓", url="https://t.me/+YcSmRvCe9xs0YjU1")
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
@@ -612,20 +618,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "morefromus":
         buttons= [[
-                        InlineKeyboardButton("📽️NEW TAMIL MOVIES🎬", url=f"https://t.me/+GiydT_oyMZE0MjZl")
+                        InlineKeyboardButton("📽️NEW TAMIL MOVIES 1🎬", url=f"https://t.me/+jLLpz0jvWEw4Njll")
                     ],
                     [
-                        InlineKeyboardButton("📽️HOLLYWOOD DUBBED MOVIES🎬", url=f"https://t.me/+r7uCG7sSC-VmMGE9")
+                        InlineKeyboardButton("📽️NEW TAMIL MOVIES 2🎬", url=f"https://t.me/+abo3FyAP1hE5MTI9")
                     ],
                     [
-                        InlineKeyboardButton("📽️MULTI LANGUAGE MOVIES🎬", url=f"https://t.me/+8pc1V0Mk8mM0Y2I1")
+                        InlineKeyboardButton("📽️ALL NEW SERIES🎬", url=f"https://t.me/+vuoYEhW__ZBiYzZl")
                     ],
                     [
-                        InlineKeyboardButton("📽️ALL NEW SERIES🎬", url=f"https://t.me/+Md4DpWxJ7NlmOTI9")
+                        InlineKeyboardButton("📽️HOLLYWOOD DUBBED MOVIES🎬", url=f"https://t.me/+ijiulHzq5s0zN2E1")
                     ],
                     [
-                        InlineKeyboardButton("🔉 DISCUSSION 🔉", url="https://t.me/+rucqp8Ao-soyMDU1"),
-                        InlineKeyboardButton("🔒 CLOSE", callback_data = "close_data")
+                        InlineKeyboardButton("📽️MULTI LANGUAGE MOVIES🎬", url=f"https://t.me/+pHuPLagTQXM3Y2Y1")
+                    ],
+                    [
+                        InlineKeyboardButton("🔉 DISCUSSION 🔉", url="https://t.me/+rucqp8Ao-soyMDU1")
+                    ],
+                    [
+                        InlineKeyboardButton(" 🔙 BACK 🔒", callback_data = "start"),
+                        InlineKeyboardButton("🔒 CLOSE 🔒", callback_data = "close")
                     ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.edit_message_media(
