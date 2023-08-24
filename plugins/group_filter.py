@@ -240,6 +240,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
+            [InlineKeyboardButton(text="❓𝐇𝐨𝐰 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝❓", url=f"https://t.me/HOWTODOWNLOADRE")],
             [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
     
@@ -280,7 +281,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"𝐇𝐞𝐫𝐞 𝐢𝐬 𝐰𝐡𝐚𝐭 𝐢 𝐟𝐨𝐮𝐧𝐝 𝐟𝐨𝐫 𝐲𝐨𝐮𝐫 𝐪𝐮𝐞𝐫𝐲..!\n\n 𝐇𝐨𝐰 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝❓❓\n\n <b>@HOWTODOWNLOADRE</b> {search}"
+        cap = f"𝐇𝐞𝐫𝐞 𝐢𝐬 𝐰𝐡𝐚𝐭 𝐢 𝐟𝐨𝐮𝐧𝐝 𝐟𝐨𝐫 𝐲𝐨𝐮𝐫 𝐪𝐮𝐞𝐫𝐲..!\n{search}\n\n 𝐇𝐨𝐰 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝❓❓\n\n <b>@HOWTODOWNLOADRE</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
