@@ -618,27 +618,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "morefromus":
         buttons= [[
-                        InlineKeyboardButton("📽️NEW TAMIL MOVIES 1🎬", url=f"https://t.me/+jLLpz0jvWEw4Njll")
-                    ],
-                    [
-                        InlineKeyboardButton("📽️NEW TAMIL MOVIES 2🎬", url=f"https://t.me/+abo3FyAP1hE5MTI9")
-                    ],
-                    [
-                        InlineKeyboardButton("📽️ALL NEW SERIES🎬", url=f"https://t.me/+vuoYEhW__ZBiYzZl")
-                    ],
-                    [
-                        InlineKeyboardButton("📽️HOLLYWOOD DUBBED MOVIES🎬", url=f"https://t.me/+ijiulHzq5s0zN2E1")
-                    ],
-                    [
-                        InlineKeyboardButton("📽️MULTI LANGUAGE MOVIES🎬", url=f"https://t.me/+pHuPLagTQXM3Y2Y1")
-                    ],
-                    [
-                        InlineKeyboardButton("🔉 DISCUSSION 🔉", url="https://t.me/+rucqp8Ao-soyMDU1")
-                    ],
-                    [
-                        InlineKeyboardButton(" 🔙 BACK 🔒", callback_data = "start"),
-                        InlineKeyboardButton("🔒 CLOSE 🔒", callback_data = "close")
-                    ]]
+                    InlineKeyboardButton("❕ ABOUT ❗", callback_data = "about"),
+                    InlineKeyboardButton("🔒 CLOSE 🔒", callback_data = "close")
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.edit_message_media(
             InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML),
