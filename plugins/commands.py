@@ -37,7 +37,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-                [
+                    InlineKeyboardButton(" MOVIE REQUEST GROUP 1 ", url = f"https://t.me/+hBtYGxUTamI1M2Jl"),
+                    InlineKeyboardButton(" MOVIE REQUEST GROUP 1 ", url = f"https://t.me/+QNwgwpXAsBhmY2I1"),
+                ],[
                     InlineKeyboardButton("❕ ABOUT ❗", callback_data = "about"),
                     InlineKeyboardButton("🔒 CLOSE 🔒", callback_data = "close")
                 ]]
@@ -83,6 +85,9 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
+                    InlineKeyboardButton(" MOVIE REQUEST GROUP 1 ", url = f"https://t.me/+hBtYGxUTamI1M2Jl"),
+                    InlineKeyboardButton(" MOVIE REQUEST GROUP 1 ", url = f"https://t.me/+QNwgwpXAsBhmY2I1"),
+                ],[
                     InlineKeyboardButton("❕ ABOUT ❗", callback_data = "about"),
                     InlineKeyboardButton("🔒 CLOSE 🔒", callback_data = "close")
                 ]]
