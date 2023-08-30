@@ -526,23 +526,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":                        
         buttons = [[
-                    InlineKeyboardButton("🎬 MAIN CHANNEL 🎬", url="https://t.me/+gqpU_4qsYAFmY2U1")
-                ],
-                [
-                    InlineKeyboardButton("📽️ MOVIE REQUEST GROUP 📽️", url="https://t.me/+EGBu5vb1vo9jMDE1")
-                ],
-                [
-                    InlineKeyboardButton("🎬 UHD MOVIES/SERIES 🎬", url="https://t.me/+abo3FyAP1hE5MTI9")
-                ],
-                [
-                    InlineKeyboardButton("😎 MORE FROM US 📢", callback_data = "morefromus")
-                ],
-                [
-                    InlineKeyboardButton("📽️ BACKUP CHANNEL 📽️", url="https://t.me/+b8RpV89fK11kMTY9")
-                ],
-                [
-                    InlineKeyboardButton("🔉 DISCUSSION 🔉", url="https://t.me/+YcSmRvCe9xs0YjU1"),
-                    InlineKeyboardButton("❔ HELP ❓", url="https://t.me/+YcSmRvCe9xs0YjU1")
+                    InlineKeyboardButton(" MOVIE REQUEST GROUP 1 ", url = f"https://t.me/+hBtYGxUTamI1M2Jl"),
+                    InlineKeyboardButton(" MOVIE REQUEST GROUP 1 ", url = f"https://t.me/+QNwgwpXAsBhmY2I1"),
+                ],[
+                    InlineKeyboardButton("❕ ABOUT ❗", callback_data = "about"),
+                    InlineKeyboardButton("🔒 CLOSE 🔒", callback_data = "close")
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
